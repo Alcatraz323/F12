@@ -2,6 +2,16 @@
 <resources>
 
     <string name="app_name">Grabber</string>
-    <string name="hello_world">Hello world!</string>
-
+	<string name="activity_pref">Preferences</string>
+	<string name="pref_cat_1">Design</string>
+	<string name="pref_cat_1_list_1">Theme</string>
+	<string name="pref_cus">Custom...</string>
+	<string name="pref_cus_hint">RGB Color(#xxxxxx)</string>
+	<string name="pref_cus_error">Invalid color</string>
+	<string name="ad_pb1">Ok</string>
+	<string name="ad_nb1">Canel</string>
+	<string name="ad_pb2">Yes</string>
+	<string name="ad_nb2">No</string>
+	<string name="main_menu_1">Preferences</string>
+	<string name="main_menu_2">About</string>
 </resources>

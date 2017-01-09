@@ -1,0 +1,14 @@
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory
+		android:title="@string/pref_cat_1">
+		<ListPreference
+			android:defaultValue="blue"
+			android:key="theme"
+			android:title="@string/pref_cat_1_list_1"
+			android:entries="@array/entries_list_preference"
+			android:entryValues="@array/entryvalues_list_preference"
+			android:dialogTitle="@string/pref_cat_1_list_1" />
+	</PreferenceCategory>
+</PreferenceScreen>
+		
