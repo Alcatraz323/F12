@@ -14,4 +14,10 @@
 	<string name="ad_nb2">否</string>
 	<string name="main_menu_1">设置</string>
 	<string name="main_menu_2">关于</string>
+	<string name="au_l_1">版本 1.0.0</string>
+	<string name="au_l_2">开发者</string>
+	<string name="au_l_2_1">Alcatraz</string>
+	<string name="au_l_3">查看源码(不可用)</string>
+	<string name="au_l_4">在市场中查看</string>
+	<string name="au_l_4_1">酷市场</string>
 </resources>

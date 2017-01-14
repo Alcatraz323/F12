@@ -3,6 +3,7 @@
     package="com.alcatraz.webgrab" >
 	<uses-permission android:name="android.permission.INTERNET"/>
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
 		android:name=".OverallOperate"
         android:allowBackup="true"
@@ -20,7 +21,11 @@
             </intent-filter>
         </activity>
 		<activity
+			android:name=".Author"/>
+		<activity
 			android:name=".Preferences"/>
+		
+		
     </application>
 
 </manifest>

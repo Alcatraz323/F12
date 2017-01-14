@@ -14,4 +14,10 @@
 	<string name="ad_nb2">No</string>
 	<string name="main_menu_1">Preferences</string>
 	<string name="main_menu_2">About</string>
+	<string name="au_l_1">Version 1.0.0</string>
+	<string name="au_l_2">Developer</string>
+	<string name="au_l_2_1">Alcatraz</string>
+	<string name="au_l_3">View source(Invalid)</string>
+	<string name="au_l_4">View in market</string>
+	<string name="au_l_4_1">Coolapk</string>
 </resources>

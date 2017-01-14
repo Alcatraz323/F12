@@ -7,6 +7,7 @@
 		<item>绿色</item>
 		<item>天依蓝</item>
 		<item>小埋色</item>
+		<item>夜间模式</item>
 		<item>自定义</item>
     </string-array>
 
@@ -18,6 +19,7 @@
 		<item>green</item>
 		<item>addedblue</item>
 		<item>umr</item>
+		<item>night</item>
 		<item>cus</item>
     </string-array>
 </resources>

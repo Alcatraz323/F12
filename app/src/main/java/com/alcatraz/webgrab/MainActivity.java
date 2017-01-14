@@ -8,6 +8,11 @@ import android.support.v7.widget.*;
 import android.support.v4.widget.*;
 import android.support.design.widget.*;
 import android.view.View.*;
+import android.support.v7.app.*;
+import android.widget.*;
+import java.net.*;
+import java.io.*;
+import android.util.*;
 
 public class MainActivity extends ThemedActivity 
 {
@@ -15,6 +20,8 @@ public class MainActivity extends ThemedActivity
 	android.support.v7.widget.Toolbar tb;
 	public static final String THEME_ACTION="t";
 	DrawerLayout dl;
+	ImageView imgvp;
+	NavigationView ngv;
 	UpdateThemeReceiver utr;
 	FloatingActionButton fab;
     @Override
@@ -24,11 +31,12 @@ public class MainActivity extends ThemedActivity
         setContentView(R.layout.main);
 		initViews();
 		regist();
+		connectt();
     }
 	public void initViews()
 	{
 		v = findViewById(R.id.mainView1);
-		fab=(FloatingActionButton) findViewById(R.id.fab);
+		fab=(FloatingActionButton) findViewById(R.id.fab1);
 		fab.setOnClickListener(new OnClickListener(){
 
 				@Override
@@ -37,13 +45,47 @@ public class MainActivity extends ThemedActivity
 					// TODO: Implement this method
 				}
 			});
-		tb = (Toolbar) findViewById(R.id.mainToolbar1);
+		tb = (android.support.v7.widget.Toolbar) findViewById(R.id.mainToolbar1);
+		ngv=(NavigationView) findViewById(R.id.navigation);
+		imgvp=(ImageView) ngv.getHeaderView(0).findViewById(R.id.navheaderImageView1);
+		if(rgb==getColor(R.color.nightmode_colorPrimary)){
+			imgvp.setImageResource(R.drawable.image_1_01);
+		}
 		dl = (DrawerLayout) findViewById(R.id.mainDrawerLayout1);
 		tb.setTitle(R.string.app_name);
 		setSupportActionBar(tb);
 		setupMaterialWithDrawer(dl, tb, v);
 	}
+	public void connectt(){
+		Thread t=new Thread(new Runnable(){
 
+				@Override
+				public void run()
+				{
+					try
+					{
+						URLConnection conn=new URL("http://coolapk.com").openConnection();
+						conn.setRequestProperty("accept", "*/*");
+						conn.setRequestProperty("connection", "Keep-Alive");
+						conn.setDoOutput(true);
+						conn.setDoInput(true);
+						conn.setReadTimeout(2000);
+						BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
+						while(true){
+							String line=reader.readLine();
+							Log.e("Alc",line);
+							if(line==null){
+								break;
+							}
+						}
+					}
+					catch (Exception e)
+					{}
+					// TODO: Implement this method
+				}
+			});
+			t.start();
+	}
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu)
 	{
@@ -67,7 +109,7 @@ public class MainActivity extends ThemedActivity
 				startActivity(new Intent(this,Preferences.class));
 				break;
 			case R.id.item2:
-				
+				startActivity(new Intent(this,Author.class));
 				break;
 		}
 		// TODO: Implement this method

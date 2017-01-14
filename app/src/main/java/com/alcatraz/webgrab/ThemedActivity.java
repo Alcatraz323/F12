@@ -55,6 +55,10 @@ public class ThemedActivity extends AppCompatActivity
 				rgb=getResources().getColor(R.color.umr_colorPrimary);
 				setTheme(R.style.UMR);
 				break;
+			case "night":
+				rgb = getResources().getColor(R.color.nightmode_colorPrimary);
+				setTheme(R.style.NightMode);
+				break;
 			case "cus":
 				rgb=Color.parseColor((String)(util.getPreference(Utils.PreferenceType.STRING,"custom_rgb","#123456")));
 				break;

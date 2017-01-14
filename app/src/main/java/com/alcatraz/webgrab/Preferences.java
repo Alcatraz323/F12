@@ -179,6 +179,10 @@ public class Preferences extends PreferenceActivity
 				rgb = getResources().getColor(R.color.umr_colorPrimary);
 				setTheme(R.style.UMR);
 				break;
+			case "night":
+				rgb = getResources().getColor(R.color.nightmode_colorPrimary);
+				setTheme(R.style.NightMode);
+				break;
 			case "cus":
 				rgb = Color.parseColor((String)(u.getPreference(Utils.PreferenceType.STRING, "custom_rgb", "#123456")));
 				break;
