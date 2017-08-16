@@ -4,27 +4,88 @@
 	<uses-permission android:name="android.permission.INTERNET"/>
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	
     <application
 		android:name=".OverallOperate"
         android:allowBackup="true"
-        android:icon="@drawable/ic_hand_pointing_right"
+        android:icon="@mipmap/c"
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
 		android:resizeableActivity = "true">
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+		<intent-filter>
+            <action android:name="android.intent.action.MAIN">
+			</action>
+			<category android:name="android.intent.category.DEFAULT">
+			</category>
+			<category android:name="android.intent.category.LAUNCHER">
+			</category>
+			<category android:name="android.intent.category.BROWSABLE">
+			</category>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW">
+				</action>
+				<category android:name="android.intent.category.DEFAULT">
+				</category>
+				<category android:name="android.intent.category.BROWSABLE">
+				</category>
+				<data android:scheme="http">
+				</data>
+				<data android:scheme="https">
+				</data>
+				<data android:scheme="about">
+				</data>
+				<data android:scheme="javascript">
+				</data>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW">
+				</action>
+				<category android:name="android.intent.category.DEFAULT">
+				</category>
+				<category android:name="android.intent.category.BROWSABLE">
+				</category>
+				<data android:scheme="file">
+				</data>
+				<data android:scheme="inline">
+				</data>
+				<data android:mimeType="text/html">
+				</data>
+				<data android:mimeType="text/mht">
+				</data>
+				<data android:mimeType="text/plain">
+				</data>
+				<data android:mimeType="application/xhtml+xml">
+				</data>
+				<data android:mimeType="application/vnd.wap.xhtml+xml">
+				</data>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.WEB_SEARCH">
+				</action>
+				<category android:name="android.intent.category.DEFAULT">
+				</category>
+				<category android:name="android.intent.category.BROWSABLE">
+				</category>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.SEND">
+				</action>
+				<category android:name="android.intent.category.DEFAULT">
+				</category>
+				<data android:mimeType="text/plain">
+				</data>
+			</intent-filter>
         </activity>
 		<activity
-			android:name=".Author"/>
+			android:name=".activities.Author"/>
 		<activity
-			android:name=".Preferences"/>
-		
+			android:name=".activities.Preferences"/>
+		<activity
+			android:name=".activities.Page"/>
 		
     </application>
 

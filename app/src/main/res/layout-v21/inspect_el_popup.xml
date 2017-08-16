@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<FrameLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:id="@+id/inspectelpopupTextView1"
+			android:textColor="#000000"
+			android:layout_margin="16dp"/>
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="right|center">
+
+			<Button
+				android:scaleX="0.7"
+				android:scaleY="0.7"
+				android:textAllCaps="false"
+				android:drawableRight="@drawable/ic_arrow_right_grey"
+				android:background="?android:attr/selectableItemBackgroundBorderless"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="match_parent"
+				android:layout_width="wrap_content"
+				android:id="@+id/inspectelpopupButton1"
+				android:text="@string/ins_check"
+				android:layout_margin="10dp"
+				android:textColor="#1F1F1F"
+				android:textSize="17sp"/>
+
+		</LinearLayout>
+
+	</FrameLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="top|left|center">
+
+		<ImageView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:src="@drawable/ic_indent"
+			android:layout_margin="16dp"
+			android:scaleX="0.7"
+			android:scaleY="0.7"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="match_parent"
+			android:id="@+id/inspectelpopupTextView2"
+			android:layout_marginTop="16dp"
+			android:layout_marginRight="16dp"
+			android:gravity="left|center"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:text="EventListeners"
+			android:layout_margin="16dp"/>
+
+		<ScrollView
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:layout_marginLeft="16dp"
+					android:layout_marginRight="16dp"
+					android:id="@+id/inspectelpopupTextView3"/>
+
+			</LinearLayout>
+
+		</ScrollView>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="left|center">
+
+				<ImageView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:src="@drawable/ic_palette"
+					android:scaleX="0.7"
+					android:scaleY="0.7"
+					android:layout_margin="16dp"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:text="Computed Style"/>
+
+			</LinearLayout>
+
+			<ListView
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:id="@+id/inspectelpopupListView1"
+				android:divider="@null"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

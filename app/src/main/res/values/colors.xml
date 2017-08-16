@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="fab_background_tint">#FFEEEEEE</color>
+    <color name="fab_drawable_tint">@android:color/white</color>
+    <color name="mini_fab_drawable_tint">@android:color/black</color>
+    <color name="title_text_color">@android:color/black</color>
+    <color name="mini_fab_title_background_tint">@android:color/white</color>
 	<color name="default_colorPrimary">#3f51b5</color>
 	<color name="nightmode_colorPrimary">#3C3C3C</color>
 	<color name="pink_colorPrimary">#e91e63</color>

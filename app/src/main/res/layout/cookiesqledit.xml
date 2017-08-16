@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <android.support.design.widget.TextInputLayout
+		android:id="@+id/textInputLayout12"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="16dp">
+
+		<EditText
+			android:singleLine="true"
+			android:hint="@string/cookie_value"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:ems="10"/>
+
+	</android.support.design.widget.TextInputLayout>
+	
+</LinearLayout>

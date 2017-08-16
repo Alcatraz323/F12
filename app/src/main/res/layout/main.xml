@@ -11,8 +11,7 @@
 	<LinearLayout
 		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
-		android:orientation="vertical"
-		>
+		android:orientation="vertical">
 
 		<android.support.design.widget.CoordinatorLayout
 			android:id="@+id/coordinator_layout"
@@ -37,7 +36,7 @@
 						android:orientation="vertical">
 
 						<View
-							android:layout_height="0dp"
+							android:layout_height="match_parent"
 							android:layout_width="match_parent"
 							android:id="@+id/mainView1"/>
 
@@ -49,41 +48,99 @@
 							android:theme="@style/ToolbarPopupTheme"
 							android:layout_height="?attr/actionBarSize">
 
+							<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:gravity="left|center">
+
+								<AutoCompleteTextView
+									android:imeOptions="actionDone"
+									android:layout_height="wrap_content"
+									android:layout_width="match_parent"
+									android:ems="10"
+									android:singleLine="true"
+									android:background="@null"
+									android:id="@+id/mainEditText1"/>
+
+							</LinearLayout>
+
 						</android.support.v7.widget.Toolbar>
 
 					</LinearLayout>
 
 				</android.support.design.widget.AppBarLayout>
 
+				<ProgressBar
+					style="?android:attr/progressBarStyleHorizontal"
+					android:layout_height="2dp"
+					android:visibility="gone"
+					android:layout_width="match_parent"
+					android:id="@+id/mainProgressBar1"/>
+
+				<android.support.v4.widget.SwipeRefreshLayout
+					android:layout_height="match_parent"
+					android:layout_width="match_parent"
+					android:id="@+id/drawerfileSwipeRefreshLayout1">
+
+					<com.alcatraz.webgrab.WebView4Scroll
+						android:layout_height="match_parent"
+						android:layout_width="match_parent"
+						android:id="@+id/mainWebView1"/>
+
+				</android.support.v4.widget.SwipeRefreshLayout>
+
 			</LinearLayout>
-			<android.support.design.widget.FloatingActionButton
-				android:id="@+id/fab1"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:src="@drawable/ic_plus"
-				android:layout_marginRight="16dp"
-				android:layout_marginBottom="16dp"
-				app:borderWidth="0dp"
-				app:elevation="6dp"
-				app:fabSize="normal"
-				app:layout_anchor="@id/mainLinearLayout1"
-				app:layout_anchorGravity="bottom|right"
-				app:pressedTranslationZ="12dp"
-				app:rippleColor="#a6a6a6"/>
+
 			
+
 		</android.support.design.widget.CoordinatorLayout>
 
 	</LinearLayout>
 
-	<android.support.design.widget.NavigationView
-		android:id="@+id/navigation"
-		android:layout_width="wrap_content"
+	<LinearLayout
+		
+		android:layout_gravity="left"
+		android:layout_width="320dp"
 		android:layout_height="match_parent"
-		android:layout_gravity="start"
-		app:headerLayout="@layout/nav_header"
-		app:menu="@menu/activity_main_drawer"/>
+		android:background="#FFFFFF"
+		android:id="@+id/mainLinearLayout2">
 
-	
+		<include
+			layout="@layout/left"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_gravity="right"
+		android:layout_width="320dp"
+		android:orientation="vertical"
+		android:layout_height="match_parent"
+		android:background="#FFFFFF"
+		android:id="@+id/mainLinearLayout3">
+
+		<android.support.design.widget.TabLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#FAFAFA"
+			android:scrollbars="horizontal"
+			app:tabTextColor="#909090"
+			app:tabSelectedTextColor="#1C1C1C"
+			app:tabIndicatorColor="#6B6B6B"
+			app:tabMode="fixed"
+			app:tabGravity="fill"
+			app:tabPaddingStart="8dp"
+			app:tabPaddingEnd="8dp"
+			android:id="@+id/mainTabLayout1"/>
+
+
+
+		<android.support.v4.view.ViewPager
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/mainViewPagerMin1"/>
+		
+
+	</LinearLayout>
 
 </android.support.v4.widget.DrawerLayout>
 

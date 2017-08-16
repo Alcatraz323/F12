@@ -14,7 +14,7 @@
 		<ImageView
 			android:layout_height="32dp"
 			android:layout_width="32dp"
-			android:src="@drawable/ic_hand_pointing_right"
+			android:src="@mipmap/c"
 			android:layout_margin="16dp"/>
 
 		<TextView

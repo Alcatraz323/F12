@@ -19,6 +19,12 @@ public class ThemedActivity extends AppCompatActivity
 	public static final int NOT_OVERRIDE=1;
 	int rgb;
 	private String theme;
+	public int getRgb(){
+		return rgb;
+	}
+	public Utils getUtils(){
+		return util;
+	}
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{

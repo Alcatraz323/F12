@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent">
+
+	<RelativeLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:id="@+id/rightLinearLayout1">
+
+			<android.support.v7.widget.CardView
+				app:cardBackgroundColor="#fafafa"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				app:cardMaxElevation="7dp"
+				app:cardElevation="5dp"
+				app:cardPreventCornerOverlap="true"
+				android:clickable="true"
+				android:foreground="?android:attr/selectableItemBackground"
+				android:id="@+id/listcardCard">
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="horizontal"
+					android:gravity="left|center">
+
+					<ImageView
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:src="@drawable/ic_cog"
+						android:layout_marginLeft="16dp"
+						android:scaleX="0.7"
+						android:scaleY="0.7"/>
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:orientation="vertical"
+						android:layout_margin="16dp">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:layout_width="wrap_content"
+							android:text="@string/r_useragent"
+							android:textColor="#222222"/>
+
+						<TextView
+							android:maxLines="2"
+							android:layout_height="wrap_content"
+							android:textAppearance="?android:attr/textAppearanceSmall"
+							android:layout_width="wrap_content"
+							android:id="@+id/rightTextView1"/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+
+			<CheckBox
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_margin="16dp"
+				android:id="@+id/rightCheckBox2"
+				android:text="@string/r_4"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="wrap_content"
+				android:text="@string/r_1"
+				android:layout_margin="16dp"/>
+
+			<ListView
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:id="@+id/rightListView1"
+				android:layout_marginBottom="90dp"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:gravity="bottom">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:background="#EDEDED"
+			android:gravity="left|center">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="wrap_content"
+				android:text="@string/type"
+				android:layout_marginLeft="16dp"/>
+
+			<Spinner
+				android:layout_height="48dp"
+				android:layout_width="match_parent"
+				android:id="@+id/rightSpinner1"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_below="@id/rightLinearLayout1"
+			android:layout_alignParentBottom="true"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:background="#EDEDED">
+
+			<ImageView
+				android:layout_height="22dp"
+				android:layout_width="22dp"
+				android:src="@drawable/ic_chevron_right"
+				android:layout_margin="10dp"/>
+
+			<EditText
+				android:imeOptions="actionDone"
+				android:background="@null"
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:ems="10"
+				android:id="@+id/rightEditText1"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</FrameLayout>
+

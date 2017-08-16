@@ -1,28 +1,30 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
+    compileSdkVersion 25
     buildToolsVersion "21.1.0"
 
     defaultConfig {
         applicationId "com.alcatraz.webgrab"
         minSdkVersion 14
-        targetSdkVersion 21
-        versionCode 1
-        versionName "1.0"
+        targetSdkVersion 25
+        versionCode 2
+        versionName "alpha(20170703)"
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+	
 }
 
 dependencies {
+	compile 'com.android.support:support-vector-drawable:+'
 	compile 'com.android.support:recyclerview-v7:+'
-	compile 'com.android.support:design:+'
 	compile 'com.android.support:cardview-v7:+'
+	compile 'com.android.support:design:+'
 	compile 'com.android.support:appcompat-v7:+'
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }

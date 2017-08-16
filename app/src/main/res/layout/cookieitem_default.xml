@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal">
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:id="@+id/cookieitemdefaultTextView1"/>
+
+	<View
+		android:background="?android:attr/dividerHorizontal"
+		android:layout_height="match_parent"
+		android:layout_width="1dp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:id="@+id/cookieitemdefaultTextView2"/>
+
+	<View
+		android:background="?android:attr/dividerHorizontal"
+		android:layout_height="match_parent"
+		android:layout_width="1dp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:id="@+id/cookieitemdefaultTextView3"/>
+
+	<View
+		android:background="?android:attr/dividerHorizontal"
+		android:layout_height="match_parent"
+		android:layout_width="1dp"
+		android:id="@+id/cookieitemdefaultView1"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:id="@+id/cookieitemdefaultTextView5"/>
+
+	<View
+		android:background="?android:attr/dividerHorizontal"
+		android:layout_height="match_parent"
+		android:layout_width="1dp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:id="@+id/cookieitemdefaultTextView4"/>
+
+	<View
+		android:background="?android:attr/dividerHorizontal"
+		android:layout_height="match_parent"
+		android:layout_width="1dp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:id="@+id/cookieitemdefaultTextView6"/>
+
+	<View
+		android:background="?android:attr/dividerHorizontal"
+		android:layout_height="match_parent"
+		android:layout_width="1dp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:id="@+id/cookieitemdefaultTextView7"/>
+
+	<View
+		android:background="?android:attr/dividerHorizontal"
+		android:layout_height="match_parent"
+		android:layout_width="1dp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:id="@+id/cookieitemdefaultTextView8"/>
+
+	<View
+		android:background="?android:attr/dividerHorizontal"
+		android:layout_height="match_parent"
+		android:layout_width="1dp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:id="@+id/cookieitemdefaultTextView9"/>
+
+	<View
+		android:background="?android:attr/dividerHorizontal"
+		android:layout_height="match_parent"
+		android:layout_width="1dp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:id="@+id/cookieitemdefaultTextView10"/>
+
+	<View
+		android:background="?android:attr/dividerHorizontal"
+		android:layout_height="match_parent"
+		android:layout_width="1dp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:id="@+id/cookieitemdefaultTextView11"/>
+
+	<View
+		android:background="?android:attr/dividerHorizontal"
+		android:layout_height="match_parent"
+		android:layout_width="1dp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:id="@+id/cookieitemdefaultTextView12"/>
+
+	<View
+		android:background="?android:attr/dividerHorizontal"
+		android:layout_height="match_parent"
+		android:layout_width="1dp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:id="@+id/cookieitemdefaultTextView13"/>
+
+	<View
+		android:background="?android:attr/dividerHorizontal"
+		android:layout_height="match_parent"
+		android:layout_width="1dp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:id="@+id/cookieitemdefaultTextView14"/>
+
+</LinearLayout>
+

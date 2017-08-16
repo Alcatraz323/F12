@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<ImageView
+			android:layout_height="32dp"
+			android:layout_width="32dp"
+			android:src="@drawable/ic_hand_pointing_right"
+			android:layout_margin="16dp"
+			android:id="@+id/taskImageView1"/>
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:gravity="left|center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="match_parent"
+					android:id="@+id/taskTextView1"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:id="@+id/taskTextView2"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="left|center">
+
+		<ProgressBar
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_margin="16dp"
+			android:id="@+id/taskProgressBar1"
+			android:layout_weight="0.9"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:id="@+id/taskTextView3"
+			android:layout_marginRight="16dp"
+			android:layout_weight="0.1"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
