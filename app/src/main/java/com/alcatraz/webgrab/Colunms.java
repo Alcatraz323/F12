@@ -17,7 +17,6 @@ public class Colunms
                 String creationUtc = cursor.getString(columnIndex);
                 columnIndex = cursor.getColumnIndex("host_key");
                 String host_key = cursor.getString(columnIndex);
-				String[] h=host_key.spl
 				columnIndex = cursor.getColumnIndex("name");
                 String name = cursor.getString(columnIndex);
 				columnIndex = cursor.getColumnIndex("value");
