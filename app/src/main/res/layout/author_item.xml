@@ -11,7 +11,9 @@
 		android:layout_width="wrap_content"
 		android:src="@android:drawable/ic_delete"
 		android:layout_margin="16dp"
-		android:id="@+id/authoritemImageView1"/>
+		android:id="@+id/authoritemImageView1"
+		android:scaleX="0.8"
+		android:scaleY="0.8"/>
 
 	<LinearLayout
 		android:layout_height="wrap_content"

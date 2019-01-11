@@ -7,6 +7,8 @@
 	<string name="pref_cus">自定义...</string>
 	<string name="pref_cus_hint">RGB颜色(#xxxxxx)</string>
 	<string name="pref_cus_error">无效颜色</string>
+	<string name="pref_cat_1_cb_1">树状图动画</string>
+	<string name="pref_cat_1_cb_summary">动画开关</string>
 	<string name="ad_pb1">确定</string>
 	<string name="ad_nb1">取消</string>
 	<string name="ad_pb2">是</string>

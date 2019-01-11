@@ -53,6 +53,15 @@ public class Preferences extends PreferenceActivity
 		tb.setTitle(R.string.activity_pref);
 		tb.setBackgroundColor(rgb);
 	}
+
+	@Override
+	protected void onDestroy()
+	{
+		// TODO: Implement this method
+		super.onDestroy();
+		sendBroadcast(new Intent().setAction(MainActivity.UPDATE_ARGS));
+	}
+	
 	public void findPreferences()
 	{
 		StatusBarUtil.setColor(this, rgb);

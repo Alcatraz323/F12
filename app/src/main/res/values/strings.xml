@@ -5,6 +5,8 @@
 	<string name="activity_pref">Preferences</string>
 	<string name="pref_cat_1">Design</string>
 	<string name="pref_cat_1_list_1">Theme(Invalid)</string>
+	<string name="pref_cat_1_cb_1">TreeView Animation</string>
+	<string name="pref_cat_1_cb_summary">Toggle TreeView Animation</string>
 	<string name="pref_cus">Custom...</string>
 	<string name="pref_cus_hint">RGB Color(#xxxxxx)</string>
 	<string name="pref_cus_error">Invalid color</string>

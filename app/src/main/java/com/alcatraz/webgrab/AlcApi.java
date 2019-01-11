@@ -1,5 +1,6 @@
 package com.alcatraz.webgrab;
 import android.webkit.*;
+import android.media.*;
 
 public class AlcApi
 {
@@ -12,6 +13,7 @@ public class AlcApi
 	public native void WvStopElementPicking();
 	public native void WvStopEditMode();
 	public native void WvStartEditMode();
+	AudioManager a=g
 	static{
 		System.loadLibrary("alc_f12");
 	}

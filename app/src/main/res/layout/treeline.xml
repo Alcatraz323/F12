@@ -17,6 +17,7 @@
 		android:layout_marginLeft="10dp"/>
 
 	<TextView
+		android:textIsSelectable="true"
 		android:id="@+id/codeview"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"

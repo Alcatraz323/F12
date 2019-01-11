@@ -48,6 +48,7 @@ public class MainActivity extends ThemedActivity
 	AppBarLayout abl;
 	public static final String THEME_ACTION="t";
 	public static final String INSPECT_ACT="ins";
+	public static final String UPDATE_ARGS="update_arg";
 	DrawerLayout dl;
 	UpdateThemeReceiver utr;
 	AutoCompleteTextView et;
@@ -108,6 +109,7 @@ public class MainActivity extends ThemedActivity
 	//Major_Tree_Inspector;
 	TreeNode html;
 	AndroidTreeView atv;
+	boolean needAnim=true;
 	TreeNode root;
 	View atv_v;
 	List<TreeNode> filterred=new LinkedList<TreeNode>();
@@ -144,7 +146,7 @@ public class MainActivity extends ThemedActivity
 		public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error)
 		{
 			// TODO: Implement this method
-			handler.cancel();
+			handler.proceed();
 		}
 
 		@Override
@@ -431,6 +433,7 @@ public class MainActivity extends ThemedActivity
 			getUtils().savePreference(Utils.PreferenceType.STRING, "user_agent", wv.getSettings().getUserAgentString());
 		}
 		ua = getUtils().getPreference(Utils.PreferenceType.STRING, "user_agent", wv.getSettings().getUserAgentString()).toString();
+		needAnim=getUtils().getPreference(Utils.PreferenceType.BOOLEAN,"inspect_anim",needAnim);
 		ua_curr.setText(ua);
 		wv.getSettings().setUserAgentString(ua);
 		initLeft();
@@ -636,7 +639,7 @@ public class MainActivity extends ThemedActivity
 		ListView styles=(ListView) inspect.findViewById(R.id.inspectelementListView2);
 		styles.setAdapter(aaa2);
 		Button btn=(Button) inspect.findViewById(R.id.inspectelementButton1);
-		btn.append("\n"+getString(R.string.inspect_Summ));
+		btn.setText(btn.getText()+"\n"+getString(R.string.inspect_Summ));
 		btn.setOnClickListener(new OnClickListener(){
 
 				@Override
@@ -832,6 +835,8 @@ public class MainActivity extends ThemedActivity
 		final String url=tnep.getUrl();
 		View v=getLayoutInflater().inflate(R.layout.pre_show, null);
 		WebView vg=(WebView) v.findViewById(R.id.preshowWebView1);
+		TextView txvurl=(TextView) v.findViewById(R.id.preshowTextView1);
+		txvurl.setText(url);
 		vg.loadUrl(url);
 		android.support.v7.app.AlertDialog a=new android.support.v7.app.AlertDialog.Builder(this)
 			.setTitle(host)
@@ -862,6 +867,7 @@ public class MainActivity extends ThemedActivity
 	{
 		IntentFilter ifil=new IntentFilter();
 		ifil.addAction(THEME_ACTION);
+		ifil.addAction(UPDATE_ARGS);
 		ifil.addAction(INSPECT_ACT);
 		utr = new UpdateThemeReceiver();
 		registerReceiver(utr, ifil);
@@ -882,8 +888,10 @@ public class MainActivity extends ThemedActivity
 	public void setTreeView(TreeNode n, boolean isUpa)
 	{
 		atv=new AndroidTreeView(this,n);
+		if(needAnim){
 		atv.setDefaultAnimation(true);
 		atv.setUse2dScroll(true);
+		}
 		llins.removeAllViews();
 		llins.addView(atv.getView());
 		// TODO: Implement this method
@@ -974,6 +982,8 @@ public class MainActivity extends ThemedActivity
 					});
 
 
+			}else if(p2.getAction().equals(UPDATE_ARGS)){
+				needAnim=getUtils().getPreference(Utils.PreferenceType.BOOLEAN,"inspect_anim",needAnim);
 			}
 		}
 	}

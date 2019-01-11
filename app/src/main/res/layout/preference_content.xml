@@ -10,6 +10,10 @@
 			android:entries="@array/entries_list_preference"
 			android:entryValues="@array/entryvalues_list_preference"
 			android:dialogTitle="@string/pref_cat_1_list_1" />
+		<CheckBoxPreference
+			android:key="inspect_anim"
+			android:summary="@string/pref_cat_1_cb_summary"
+			android:title="@string/pref_cat_1_cb_1"/>
 	</PreferenceCategory>
 	<PreferenceCategory
 		android:title="@string/pref_cat_2">

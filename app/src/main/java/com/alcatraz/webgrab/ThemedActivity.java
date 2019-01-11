@@ -72,7 +72,7 @@ public class ThemedActivity extends AppCompatActivity
 	}
 	
 	public void setupMaterialWithDrawer(DrawerLayout dl,android.support.v7.widget.Toolbar tb,View top) {
-		new DrawerLayoutUtil().setImmersiveToolbarWithDrawer(tb,dl,this,top,"#3f51b5",Build.VERSION.SDK_INT);
+		DrawerLayoutUtil.setImmersiveToolbarWithDrawer(tb,dl,this,top,"#3f51b5",Build.VERSION.SDK_INT,false,32);
 		top.setBackgroundColor(rgb);
 		tb.setBackgroundColor(rgb);
 	}
